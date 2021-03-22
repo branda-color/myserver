@@ -20,3 +20,18 @@ async function test() {
 }
 
 test();
+
+//測試回乎函數執行序列
+let a = 1;
+setTimeout(() => {
+    console.log(a);
+
+}, 0)
+
+a = 2;
+
+setTimeout(() => {
+    console.log(a);
+}, 0)
+
+a = 3;
